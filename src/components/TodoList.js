@@ -5,7 +5,7 @@ import TodoForm from './TodoForm';
 const TodoList = (props) => {
 
         return(
-            <div>
+            <div className='todolist'>
                 <h1>TodoList</h1>
                 {props.todos.map(todo => {
                 return <Todo key={todo.id} todo={todo} click={props.click} />
